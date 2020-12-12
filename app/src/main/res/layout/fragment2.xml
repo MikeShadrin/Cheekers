@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon">
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="670dp"
+        android:src="@drawable/logo"
+        />
+    <ImageButton
+        android:id="@+id/btn1F2"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/exit"/>
+    <ImageButton
+        android:id="@+id/btn2F2"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/menu" />
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:background="@drawable/desk"
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:columnWidth="44dp"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"></GridView>
+
+</RelativeLayout>

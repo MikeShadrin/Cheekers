@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fon">
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="670dp"
+        android:src="@drawable/logo"
+        />
+    <ImageView
+        android:layout_width="218dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="550dp"
+        android:src="@drawable/title"
+        />
+    <ImageButton
+        android:id="@+id/btn1F1"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="430dp"
+        android:src="@drawable/start" />
+
+    <ImageButton
+        android:id="@+id/btn2F1"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="370dp"
+        android:src="@drawable/contin" />
+    <ImageButton
+        android:id="@+id/btn3F1"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="310dp"
+        android:src="@drawable/exit" />
+
+</RelativeLayout>
