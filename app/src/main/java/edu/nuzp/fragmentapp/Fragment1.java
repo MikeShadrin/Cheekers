@@ -13,7 +13,6 @@ public class Fragment1 extends Fragment implements View.OnClickListener
     private ImageButton btn;
     private ImageButton btn1;
     private ImageButton btn2;
-    private Fragment1 fragment1;
     private Fragment2 fragment2;
     private FragmentTransaction transaction;
     public Fragment1()
@@ -25,7 +24,6 @@ public class Fragment1 extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        fragment1 = new Fragment1();
         fragment2 = new Fragment2();
         View v =  inflater.inflate(R.layout.fragment1, container, false);
         btn = v.findViewById(R.id.btn1F1);
@@ -34,6 +32,7 @@ public class Fragment1 extends Fragment implements View.OnClickListener
         btn.setOnClickListener(this);
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
+
         return v;
     }
 

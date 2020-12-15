@@ -83,10 +83,11 @@ public class DataAdapter extends BaseAdapter {
     private Context mContext;
     ImageView imageView;
     SQLiteConnector dbHelper;
+    private Fragment2 fragment2;
     public DataAdapter(Context c,boolean fl) {
         mContext = c;
         dbHelper = new SQLiteConnector(mContext);
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        fragment2 = new Fragment2();
         if(fl==true) {
             TableForSaveAsincTask crMass = new TableForSaveAsincTask();
             crMass.execute();
@@ -116,7 +117,6 @@ public class DataAdapter extends BaseAdapter {
             }
         }
     }
-
     public int getCount() {
         return mThumbIds.length;
     }
@@ -130,8 +130,7 @@ public class DataAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(134, 134));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+            imageView.setLayoutParams(new GridView.LayoutParams(117, 112));
         } else {
             imageView = (ImageView) convertView;
         }

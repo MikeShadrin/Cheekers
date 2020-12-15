@@ -3,20 +3,17 @@ package edu.nuzp.fragmentapp;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 public class SQLiteConnector extends SQLiteOpenHelper
 {
     public SQLiteConnector(Context context)
     {
-        super(context, "myDB", null, 1);
+        super(context, "myDB1", null, 1);
     }
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-        try
-        {
-            /*db.execSQL("create table desk (_id integer primary key autoincrement, imgval integer)");
+            db.execSQL("create table desk (_id integer primary key autoincrement, imgval integer)");
         db.execSQL("insert into desk (imgval) values(0), ("+ R.drawable.white1 +") ,(0), ("+ R.drawable.white2 +"), (0), ("+ R.drawable.white3 +")," +
                 "            (0), ("+ R.drawable.white4 +"), ("+ R.drawable.white5 +"), (0), ("+ R.drawable.white6 +"), (0), ("+ R.drawable.white7 +"), (0)," +
                 "            ("+ R.drawable.white8 +"), (0), (0), (0), (0), (0), (0), (0)," +
@@ -24,12 +21,8 @@ public class SQLiteConnector extends SQLiteOpenHelper
                 "            (0), (0), (0), (0), (0), (0), (0), (0)," +
                 "            (0), (0), (0), (0), (0), (0), (0), (0)," +
                 "            (0), (0), (0), ("+ R.drawable.black1 +"), (0), ("+ R.drawable.black2 +"), (0), ("+ R.drawable.black3 +")," +
-                "            (0), ("+ R.drawable.black4 +"), ("+ R.drawable.black5 +"), (0), ("+ R.drawable.black6 +"), (0), ("+ R.drawable.black7 +"), (0), ("+ R.drawable.black8 +"), (0)");*/
-        }
-        catch(Exception e)
-        {
-            Log.d("LOG", "Exception creating table 'members'");
-        }
+                "            (0), ("+ R.drawable.black4 +"), ("+ R.drawable.black5 +"), (0), ("+ R.drawable.black6 +"), (0), ("+ R.drawable.black7 +"), (0), ("+ R.drawable.black8 +"), (0)");
+
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)

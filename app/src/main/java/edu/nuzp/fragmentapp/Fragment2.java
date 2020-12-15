@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import java.util.ArrayList;
 
 public class Fragment2 extends Fragment implements View.OnClickListener
@@ -23,11 +23,6 @@ public class Fragment2 extends Fragment implements View.OnClickListener
     boolean hod=true;
     ArrayList<Integer> postodel = new ArrayList<Integer>();
     ArrayList<Integer> moves = new ArrayList<Integer>();
-    public Fragment2()
-    {
-        // Required empty public constructor
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
@@ -40,6 +35,8 @@ public class Fragment2 extends Fragment implements View.OnClickListener
         btn1.setOnClickListener(this);
         dataadapter = new DataAdapter(getContext(),flg);
         GridView gridview = (GridView) v.findViewById(R.id.gridView1);
+        LinearLayout.LayoutParams etParams = new LinearLayout.LayoutParams(900,900);
+        gridview.setLayoutParams(etParams);
         gridview.setAdapter(dataadapter);
         gridview.setOnItemClickListener(gridviewOnItemClickListener);
         return v;
